@@ -1,13 +1,7 @@
-NOT MAINTAINED
 ====
 
-Fork and use at your own risk.
-
-
-Swig [![Build Status](http://img.shields.io/travis/paularmstrong/swig/master.svg?style=flat)](http://travis-ci.org/paularmstrong/swig) [![Dependency Status](http://img.shields.io/gemnasium/paularmstrong/swig.svg?style=flat)](https://gemnasium.com/paularmstrong/swig) [![NPM version](http://img.shields.io/npm/v/swig.svg?style=flat)](https://www.npmjs.org/package/swig) [![NPM Downloads](http://img.shields.io/npm/dm/swig.svg?style=flat)](https://www.npmjs.org/package/swig)
-====
-
-[Swig](http://paularmstrong.github.io/swig/) is an awesome, Django/Jinja-like template engine for node.js.
+[Gulp](https://github.com/SkinlessApps/gulp) is a better, smarter javascript template engine based on the phenomenal work of https://github.com/paularmstrong/gulp/
+Most of the README is from the original gulp README.
 
 Features
 --------
@@ -19,25 +13,13 @@ Features
 * Automatically escapes all output for safe HTML rendering.
 * Lots of iteration and conditionals supported.
 * Robust without the bloat.
-* Extendable and customizable. See [Swig-Extras](https://github.com/paularmstrong/swig-extras) for some examples.
-* Great [code coverage](http://paularmstrong.github.io/swig/coverage.html).
+* Extendable and customizable. See [Gulp-Extras](https://github.com/paularmstrong/gulp-extras) for some examples.
+* Great [code coverage](http://paularmstrong.github.io/gulp/coverage.html).
 
 Need Help? Have Questions? Comments?
 ------------------------------------
 
-* [Mailing List/Google Group](http://groups.google.com/forum/#!forum/swig-templates)
-* [StackOverflow](http://stackoverflow.com/questions/tagged/swig-template)
-* [Migration Guide](https://github.com/paularmstrong/swig/wiki/Migrating-from-v0.x.x-to-v1.0.0)
-
-Installation
-------------
-
-    npm install swig
-
-Documentation
--------------
-
-All documentation can be viewed online on the [Swig Website](http://paularmstrong.github.io/swig/).
+Open an issue!
 
 Basic Example
 -------------
@@ -56,8 +38,8 @@ Basic Example
 ### node.js code
 
 ```js
-var swig  = require('swig');
-var template = swig.compileFile('/absolute/path/to/template.html');
+var gulp  = require('gulp');
+var template = gulp.compileFile('/absolute/path/to/template.html');
 var output = template({
     pagename: 'awesome people',
     authors: ['Paul', 'Jim', 'Jane']
@@ -75,17 +57,15 @@ var output = template({
 </ul>
 ```
 
-For working example see [examples/basic](https://github.com/paularmstrong/swig/tree/master/examples/basic)
-
 How it works
 ------------
 
-Swig reads template files and translates them into cached javascript functions. When we later render a template we call the evaluated function, passing a context object as an argument.
+Gulp reads template files and translates them into cached javascript functions. When we later render a template we call the evaluated function, passing a context object as an argument.
 
 License
 -------
 
-Copyright (c) 2010-2013 Paul Armstrong
+Copyright (c) 2018 - 2019 Skinless Apps
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
